@@ -188,3 +188,21 @@ footer{
 .footer-column{
     width: 50%;
 }
+
+footer input[type="text"],footer input[type="email"], textarea {
+    height: 64px;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 10px 20px;
+}
+footer .text-size{
+    font-size: 16px;
+}
+
+footer .icon{
+    margin: 30px;
+    
+}
