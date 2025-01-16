@@ -12,11 +12,13 @@
     background-image: url("../images/developer.png"), url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    
 }
 
 /* shared style */
 .secondary-bg{
     background-color: #FFF8F3;
+    
 }
 .text-primary{
     color: #FD6E0A;
@@ -32,9 +34,9 @@
 .btn-primary{
     background-color: #FD6E0A;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
     color: white;
-    padding: 18px 35px;
+    padding: 9px 18px;
     border-radius: 5px;
     border: none;
 }
@@ -48,12 +50,16 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 26px 5px;
+    margin-top:26px ;
+    margin-bottom:26px;
+    margin-left: 106px ;
+    margin-right:26px ;
 }
 
 .nav-title{
     font-weight: 800;
-    font-size: 45px;
+    font-size: 23px;
 
 }
 nav ul{
@@ -63,36 +69,36 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    margin-right: 51px;
+    margin-right: 27px;
 }
 nav ul li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 /* Banner style */
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 230px;
+    margin: 0 18px 0 122px;
 
 }
 .banner-content{
-    max-width: 585px;
+    max-width: 311px;
 
 }
 .banner-greeting{
-    font-size: 45px;
+    font-size: 23px;
     font-weight: 600;
 
 }
 .banner-title{
-    font-size: 85px;
+    font-size: 45px;
     font-weight: bold;
 
 }
 .banner-pro-pic{
-    width: 584px;
+    width: 311px;
 }
 /* Main style  */
 main{
@@ -204,5 +210,68 @@ footer .text-size{
 
 footer .icon{
     margin: 30px;
+    
+}
+
+.hide{
+    display: none;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    nav{
+        flex-direction: column;
+        margin: 20px;
+        justify-content:flex-start;
+        align-items: start;
+    }
+    ul{
+        flex-direction: column;
+        align-items:start ;
+        margin-left: 2px;
+        padding: 10px;
+        
+    }
+    li{
+        margin-bottom: 10px;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 20px;
+        max-width: 576px;
+        
+    }
+    .banner-pro-pic{
+        width: 100%;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],footer input[type="email"], textarea{
+        width: 100% - 40px;
+    }
+
+    .about{
+        padding: 20px;
+    }
+    .about-items{
+        flex-direction: column;
+    }
+
     
 }
