@@ -258,12 +258,13 @@ footer .icon{
     footer{
         flex-direction: column;
         padding: 20px;
+        
     }
     .footer-column{
         width: 100%;
     }
     footer input[type="text"],footer input[type="email"], textarea{
-        width: 100% - 40px;
+        width: calc(100% - 40px) ;
     }
 
     .about{
@@ -272,6 +273,6 @@ footer .icon{
     .about-items{
         flex-direction: column;
     }
-
+   
     
 }
